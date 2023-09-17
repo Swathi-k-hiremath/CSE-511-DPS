@@ -2,7 +2,7 @@ CREATE TABLE query1 AS
 SELECT g.name, count(1) as moviecount 
 FROM hasagenre 
 JOIN genres g 
-USING (genreid) GROUP BY name
+USING (genreid) GROUP BY name;
 
 
 CREATE TABLE query2 AS
