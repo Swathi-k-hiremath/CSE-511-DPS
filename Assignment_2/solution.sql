@@ -53,6 +53,7 @@ JOIN (SELECT movieid
 	HAVING count(1) = 2) Y
 USING (movieid);
 
+CREATE TABLE query8 AS
 SELECT AVG(rating) AS average
 FROM ratings
 JOIN (SELECT movieid
