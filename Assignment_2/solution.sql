@@ -5,7 +5,8 @@ CREATE TABLE query1 AS
 SELECT g.name, count(1) as moviecount 
 FROM hasagenre 
 JOIN genres g 
-USING (genreid) GROUP BY name;
+USING (genreid) 
+GROUP BY name;
 
 
 /* Q2: Write a query to return the average rating per genre */
