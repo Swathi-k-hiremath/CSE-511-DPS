@@ -96,4 +96,4 @@ USING (movieid);
 CREATE TABLE query9 AS
 SELECT movieid, rating
 FROM ratings
-WHERE userid = v1;
+WHERE userid = :v1;
